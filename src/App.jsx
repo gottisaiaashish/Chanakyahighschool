@@ -2,7 +2,6 @@ import React, { useState, createContext, useContext, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { CardStack } from './CardStack';
 import { WhyChooseUs } from './WhyChooseUs';
-import { GradientButton } from './GradientButton';
 import { AdmissionForm } from './AdmissionForm';
 import { ChevronRight } from 'lucide-react';
 import './index.css';
@@ -455,7 +454,7 @@ function App() {
           <a href="#academics">Classes</a>
           <a href="#achievements">Achievements</a>
           <a href="#campus">Campus Life</a>
-          <GradientButton href="#admissions">Apply Now</GradientButton>
+          <a href="#admissions" className="btn btn-primary">Apply Now</a>
         </div>
       </nav>
 
@@ -471,7 +470,7 @@ function App() {
           <h1>Building Knowledge, Discipline,<br/>and Good Character</h1>
           <p>At Chanakya High School, we believe school should be a happy place. We don't just teach from books; we help children think clearly, act responsibly, and grow with joy.</p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
-            <GradientButton href="#admissions">Join Our School</GradientButton>
+            <a href="#admissions" className="btn btn-accent">Join Our School</a>
             <a href="#about" className="btn btn-outline" style={{ background: 'transparent' }}>Learn More About Us</a>
           </div>
         </div>
